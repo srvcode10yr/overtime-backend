@@ -9,7 +9,7 @@ RUN gradle build --no-daemon
 FROM openjdk:17-jdk-slim
 
 WORKDIR /app
-COPY --from=builder /app/build/libs/attendance-processor.jar .
+COPY --from=builder /app/build/libs/overtime-backend.jar .
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "attendance-processor.jar"]
+ENTRYPOINT ["java", "-jar", "overtime-backend.jar"]
