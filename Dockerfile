@@ -11,5 +11,6 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY --from=builder /app/build/libs/overtime-backend.jar .
 
-EXPOSE 8080
+EXPOSE 10000
+
 ENTRYPOINT ["java", "-jar", "overtime-backend.jar"]
