@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/attendance")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://overtime-ui.onrender.com")
 public class AttendanceController {
 
     @Autowired
